@@ -1,0 +1,650 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".MainActivity"
+        android:padding="10sp">
+
+        <!-- note: done since 12/11/22 -->
+        <!-- top part -->
+        <TextView
+            android:id="@+id/textApplicationForEmployment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Application For Employment"
+            android:textSize="25sp"
+            android:textAlignment="center"
+            android:layout_marginBottom="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextPosition"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Position You Are Applying For"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextSalary"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Desired Salary"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextDateAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20sp"
+            android:ems="10"
+            android:hint="Date Available For Work"
+            android:inputType="date"
+            android:minHeight="48dp" />
+
+        <!-- personal -->
+        <TextView
+            android:id="@+id/textviewPersonal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Personal Information"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:layout_marginBottom="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextLastName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Last Name"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextFirstName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="First Name"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextMiddleName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Middle"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLineAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:gravity="start|top"
+            android:hint="Address"
+            android:inputType="textMultiLine"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextCity"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="City" />
+
+        <EditText
+            android:id="@+id/editTextState"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="State"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextNumberZip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Zip"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextPhoneHome"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Home Phone"
+            android:inputType="phone"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextPhoneCell"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Cell Phone"
+            android:inputType="phone" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Email Address"
+            android:inputType="textEmailAddress" />
+
+        <EditText
+            android:id="@+id/editTextNumberSSN"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Social Security Number"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewUSCitizen"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Are you a U.S. Citizen?" />
+
+            <RadioButton
+                android:id="@+id/radioYes"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioNo"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewFelony"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="Have you been convicted of a felony?" />
+
+            <RadioButton
+                android:id="@+id/radioYes2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioNo2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <TextView
+                android:id="@+id/textViewDrugScreenTest"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="If selected for employment are you willing to submit to a pre-employment drug screening test?" />
+
+            <RadioButton
+                android:id="@+id/radioYes3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioNo3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- education -->
+        <TextView
+            android:id="@+id/textviewEducation"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:id="@+id/textviewEducation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education 1"
+            android:layout_marginBottom="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextSchool1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="School Name" />
+
+        <EditText
+            android:id="@+id/editTextLocation1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Location" />
+
+        <EditText
+            android:id="@+id/editTextNumberYearAttended1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Years Attended"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextDegree1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Degree Received" />
+
+        <EditText
+            android:id="@+id/editTextMajor1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Major" />
+
+        <TextView
+            android:id="@+id/textviewEducation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education 2"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextSchool2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="School Name" />
+
+        <EditText
+            android:id="@+id/editTextLocation2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Location" />
+
+        <EditText
+            android:id="@+id/editTextNumberYearAttended2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Years Attended"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextDegree2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Degree Received" />
+
+        <EditText
+            android:id="@+id/editTextMajor2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Major" />
+
+        <TextView
+            android:id="@+id/textviewEducation3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Education 3"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextSchool3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="School Name" />
+
+        <EditText
+            android:id="@+id/editTextLocation3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Location" />
+
+        <EditText
+            android:id="@+id/editTextNumberYearAttended3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Years Attended"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextDegree3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Degree Received" />
+
+        <EditText
+            android:id="@+id/editTextMajor3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Major" />
+
+        <EditText
+            android:id="@+id/editTextOtherTraining"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Other training, certification or license held" />
+
+        <!-- employment -->
+        <TextView
+            android:id="@+id/textviewEmployment"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Employment"
+            android:textSize="25sp"
+            android:layout_marginBottom="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextEmployer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Employer" />
+
+        <EditText
+            android:id="@+id/editTextWorkPhone"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Work Phone" />
+
+        <EditText
+            android:id="@+id/editTextPayRate1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Pay Rate (from and to)" />
+
+        <EditText
+            android:id="@+id/editTextTextMultiLineAddress2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Address"
+            android:gravity="start|top"
+            android:inputType="textMultiLine" />
+
+        <EditText
+            android:id="@+id/editTextCity2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="City" />
+
+        <EditText
+            android:id="@+id/editTextState2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="State" />
+
+        <EditText
+            android:id="@+id/editTextNumberZip2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Zip"
+            android:inputType="number"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextDuties"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Duties Performed" />
+
+        <EditText
+            android:id="@+id/editTextSupervisorInfos"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Supervisor Name and Title" />
+
+        <EditText
+            android:id="@+id/editTextReasonForLeaving"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Reason for leaving" />
+
+        <RadioGroup
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:id="@+id/textViewContactPrevEmployer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="18sp"
+                android:text="May we contact them?" />
+
+            <RadioButton
+                android:id="@+id/radioYes4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Yes" />
+
+            <RadioButton
+                android:id="@+id/radioNo4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="No" />
+        </RadioGroup>
+
+        <!-- reference -->
+        <TextView
+            android:id="@+id/textviewReference"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="References"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"/>
+
+        <TextView
+            android:id="@+id/textviewReference1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reference 1"
+            android:layout_marginBottom="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextReferenceName1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/editTextReferenceTitle1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title" />
+
+        <EditText
+            android:id="@+id/editTextReferenceCompany1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Company" />
+
+        <EditText
+            android:id="@+id/editTextReferencePhone1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Phone" />
+
+        <TextView
+            android:id="@+id/textviewReference2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reference 2"
+            android:layout_marginBottom="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextReferenceName2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:minHeight="48dp" />
+
+        <EditText
+            android:id="@+id/editTextReferenceTitle2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title" />
+
+        <EditText
+            android:id="@+id/editTextReferenceCompany2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Company" />
+
+        <EditText
+            android:id="@+id/editTextReferencePhone2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Phone" />
+
+
+        <TextView
+            android:id="@+id/textviewReference3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Reference 3"
+            android:layout_marginBottom="10sp"/>
+
+        <EditText
+            android:id="@+id/editTextReferenceName3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name" />
+
+        <EditText
+            android:id="@+id/editTextReferenceTitle3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title" />
+
+        <EditText
+            android:id="@+id/editTextReferenceCompany3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Company" />
+
+        <EditText
+            android:id="@+id/editTextReferencePhone3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Phone" />
+
+        <!-- acknowledgement -->
+        <TextView
+            android:id="@+id/textviewAcknowledgement"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Acknowledgement and Authorization"
+            android:textAllCaps="true"
+            android:textSize="25sp"
+            android:layout_marginTop="10sp"
+            android:layout_marginBottom="10sp"/>
+
+        <CheckBox
+            android:id="@+id/checkBox1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I certify that all answers given herein are true and complete to the best of my knowledge." />
+
+        <CheckBox
+            android:id="@+id/checkBox2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="I authorize investigation of all statements contained in this application for employment as may be necessary in arriving at an employment decision." />
+
+        <CheckBox
+            android:id="@+id/checkBox3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In the event of employment, I understand that false or misleading information given in my application or interview(s) may result in discharge." />
+
+        <EditText
+            android:id="@+id/editTextSignature"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Signature of Applicant" />
+
+        <EditText
+            android:id="@+id/editTextDate2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Date" />
+
+
+    </LinearLayout>
+
+
+</ScrollView>
