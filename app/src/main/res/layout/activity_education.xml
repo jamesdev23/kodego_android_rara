@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EducationActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="20dp">
+
+    <!-- education 1-->
+    <TextView
+        android:id="@+id/text_education1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Education 1"
+        android:layout_marginBottom="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_school1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="School Name"
+            android:layout_weight="5"
+            />
+
+        <EditText
+            android:id="@+id/edit_location1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Location"
+            android:layout_weight="5"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_years_attended1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Years Attended"
+            android:inputType="number"
+            android:layout_weight="5"
+            />
+
+        <EditText
+            android:id="@+id/edit_degree_received1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Degree Received"
+            android:layout_weight="5"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_major1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Major"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- education 2 -->
+
+    <TextView
+        android:id="@+id/text_education2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Education 2"
+        android:layout_marginBottom="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_school2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="School Name"
+            android:layout_weight="4"
+            />
+
+        <EditText
+            android:id="@+id/edit_location2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Location"
+            android:layout_weight="6"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_years_attended2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Years Attended"
+            android:inputType="number"
+            android:layout_weight="4"
+            />
+
+        <EditText
+            android:id="@+id/edit_degree_received2"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Degree Received"
+            android:layout_weight="6"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_major2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Major"
+        android:layout_marginBottom="20dp"/>
+
+    <!-- education 3 -->
+
+    <TextView
+        android:id="@+id/text_education3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Education 3"
+        android:layout_marginBottom="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_school3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="School Name"
+            android:layout_weight="4"
+            />
+
+        <EditText
+            android:id="@+id/edit_location3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Location"
+            android:layout_weight="6"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_years_attended3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Years Attended"
+            android:inputType="number"
+            android:layout_weight="4"
+            />
+
+        <EditText
+            android:id="@+id/edit_degree_received3"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Degree Received"
+            android:layout_weight="6"
+            />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/edit_major3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Major"
+        android:layout_marginBottom="20dp"/>
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

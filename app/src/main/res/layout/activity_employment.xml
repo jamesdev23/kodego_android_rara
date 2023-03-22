@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EmploymentActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="20dp">
+
+    <!-- employment -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_employer"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Employer"
+            android:layout_weight="6"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edit_work_phone"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Work Phone"
+            android:layout_weight="4"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_payrate_from"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Pay Rate (From)"
+            android:inputType="number"
+            android:layout_weight="4.9"
+            android:minHeight="48dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=" - "
+            android:textAlignment="center"
+            android:textSize="25sp"
+            android:layout_weight="0.2"/>
+
+        <EditText
+            android:id="@+id/edit_payrate_to"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Pay Rate (To)"
+            android:inputType="number"
+            android:layout_weight="4.9"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/editmultiline_address"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Address"
+        android:gravity="start|top"
+        android:inputType="textMultiLine"
+        android:minHeight="48dp"
+        />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_city"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="City"
+            android:layout_weight="4"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edit_state"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="State"
+            android:layout_weight="3"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edit_zip"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Zip"
+            android:inputType="number"
+            android:layout_weight="3"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+
+
+    <EditText
+        android:id="@+id/edit_dutiesperformed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Duties Performed"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/edit_supervisornametitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Supervisor Name and Title"
+        android:minHeight="48dp"/>
+
+    <EditText
+        android:id="@+id/edit_reasonforleaving"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Reason for leaving"
+        android:minHeight="48dp"/>
+
+    <RadioGroup
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <TextView
+            android:id="@+id/text_contact_previous_employer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:text="May we contact them?" />
+
+        <RadioButton
+            android:id="@+id/radio_contactpreviousemployer_yes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Yes" />
+
+        <RadioButton
+            android:id="@+id/radio_contactpreviousemployer_no"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No" />
+    </RadioGroup>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

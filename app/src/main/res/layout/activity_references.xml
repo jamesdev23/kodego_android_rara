@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReferencesActivity"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
+    android:padding="20dp">
+
+    <!-- reference 1-->
+
+    <TextView
+        android:id="@+id/text_reference1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reference 1"
+        android:layout_marginBottom="10sp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_reference_name1"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edit_reference_title1"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_reference_company1"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Company"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edit_reference_phone1"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Phone"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+    <!-- reference 2 -->
+    <TextView
+        android:id="@+id/text_reference2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reference 2"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_reference_name2"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edit_reference_title2"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_reference_company2"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Company"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edit_reference_phone2"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Phone"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+    <!-- reference 3 -->
+    <TextView
+        android:id="@+id/text_reference3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Reference 3"
+        android:layout_marginTop="20dp"
+        android:layout_marginBottom="10sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_reference_name3"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Name"
+            android:minHeight="48dp"/>
+
+        <EditText
+            android:id="@+id/edit_reference_title3"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Title"
+            android:minHeight="48dp"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="10">
+
+        <EditText
+            android:id="@+id/edit_reference_company3"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Company" />
+
+        <EditText
+            android:id="@+id/edit_reference_phone3"
+            android:layout_width="0dp"
+            android:layout_weight="5"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="Phone" />
+
+    </LinearLayout>
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_back"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Back"
+            android:layout_alignParentLeft="true"
+            android:padding="15dp"/>
+
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:layout_alignParentRight="true"
+            android:padding="15dp"/>
+
+    </RelativeLayout>
+
+
+</LinearLayout>
