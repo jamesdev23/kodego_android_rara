@@ -1,6 +1,6 @@
 # Application For Employment App
 
-### Old name:
+### Github repo:
 kodego_rara_application_form
 
 ### Description:
